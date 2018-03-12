@@ -1,0 +1,19 @@
+.main {
+    background-color: lime; 
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+}
+img {
+    margin: 20px;
+    height:400px;
+}
+body{
+    color:magenta;
+    font-weight: 700;
+}
+.content{
+    margin-top: 20px;
+}
