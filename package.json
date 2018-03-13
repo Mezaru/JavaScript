@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "learning javascript",
+  "main": "code.js",
+  "scripts": {
+    "savecss": "lessc styles.less styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mezaru/JavaScript.git"
+  },
+  "author": "Marcus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mezaru/JavaScript/issues"
+  },
+  "homepage": "https://github.com/Mezaru/JavaScript#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^3.0.1"
+  }
+}
