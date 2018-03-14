@@ -1,5 +1,5 @@
 let movieData = require("./data");
-let $ = require("jQuery");
+let $ = require("jquery");
 
 function renderMovie(movie) {
     $("#image").attr("src", movie.image);
