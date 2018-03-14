@@ -4,7 +4,11 @@
   "description": "learning javascript",
   "main": "code.js",
   "scripts": {
-    "savecss": "lessc styles.less styles.css"
+    "bundle": "webpack",
+    "savecss": "lessc styles.less dist/styles.css",
+    "start:dev": "webpack-dev-server",
+    "copyindex": "cp index.html dist/index.html && cp orbitron-black.otf dist/orbitron-black.otf",
+    "build": "npm run bundle && npm run savecss && npm run copyindex"
   },
   "repository": {
     "type": "git",
@@ -16,8 +20,14 @@
     "url": "https://github.com/Mezaru/JavaScript/issues"
   },
   "homepage": "https://github.com/Mezaru/JavaScript#readme",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
-    "less": "^3.0.1"
+    "less": "^3.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-notifier": "^1.6.0"
   }
 }

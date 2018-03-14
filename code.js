@@ -1,3 +1,6 @@
+let movieData = require("./data");
+let $ = require("jQuery");
+
 function renderMovie(movie) {
     $("#image").attr("src", movie.image);
     // let image = document.getElementById("image");
@@ -43,5 +46,5 @@ for (let index = 1; index <= 5; index++) {
     $("#star" + index).click(function(){
         changeStarRating(index);
     });
-    
 }
+renderMovie(movieData);

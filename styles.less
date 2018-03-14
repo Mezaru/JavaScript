@@ -1,6 +1,13 @@
 @lime-lime: lime; 
-
+@font-face {
+    font-family: Orbitron;
+    src: url(./orbitron-black.otf);
+}
+#actors{
+    padding-left: 15px;
+  }
 .main {
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.2); 
     display: flex;
     flex-direction: row;
@@ -9,10 +16,12 @@
     margin-right: auto;
     box-shadow: inset 0 0 20px 0px black;
     border-radius: 10px;
+    font-family: Orbitron;
 }
 img {
-    margin: 20px;
+    margin-right: 20px;
     height:400px;
+    box-shadow: 0 0 20px 5px magenta;
 }
 body{
     color:magenta;
@@ -20,6 +29,9 @@ body{
     background-color: @lime-lime;
     .content{
         margin-top: 20px;
+        h1 {
+            text-shadow: 3px 2px 1px black;
+        }
     }   
 }
 
@@ -32,4 +44,5 @@ body{
   
   .stars .filled {
     color: rgb(25, 0, 255);
+    text-shadow: 0 0 15px magenta;
   }
