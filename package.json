@@ -8,7 +8,10 @@
     "savecss": "lessc styles.less dist/styles.css",
     "start:dev": "webpack-dev-server",
     "copyindex": "cp index.html dist/index.html && cp orbitron-black.otf dist/orbitron-black.otf",
-    "build": "npm run bundle && npm run savecss && npm run copyindex"
+    "build": "npm run bundle && npm run savecss && npm run copyindex",
+    "lintless": "stylelint styles.less",
+    "lintjs": "eslint .",
+    "lint": "npm run lintless && npm run lintjs"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,9 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "eslint": "^4.18.2",
     "less": "^3.0.1",
+    "stylelint": "^9.1.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
     "webpack-dev-server": "^3.1.1",
