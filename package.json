@@ -2,7 +2,7 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "learning javascript",
-  "main": "code.js",
+  "main": "code.ts",
   "scripts": {
     "bundle": "webpack",
     "savecss": "lessc styles.less dist/styles.css",
@@ -10,8 +10,8 @@
     "copyindex": "cp index.html dist/index.html && cp orbitron-black.otf dist/orbitron-black.otf",
     "build": "npm run bundle && npm run savecss && npm run copyindex",
     "lintless": "stylelint styles.less",
-    "lintjs": "eslint .",
-    "lint": "npm run lintless && npm run lintjs"
+    "lintts": "tslint -c tslint.json '*.ts'",
+    "lint": "npm run lintless && npm run lintts"
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,11 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
     "less": "^3.0.1",
     "stylelint": "^9.1.2",
+    "ts-loader": "^4.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
     "webpack-dev-server": "^3.1.1",
